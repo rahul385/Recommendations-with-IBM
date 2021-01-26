@@ -3,8 +3,8 @@ import numpy as np
 import pickle
 
 
-df = pd.read_csv('user-item-interactions.csv')
-df_content = pd.read_csv('articles_community.csv')
+df = pd.read_csv('data/user-item-interactions.csv')
+df_content = pd.read_csv('data/articles_community.csv')
 del df['Unnamed: 0']
 del df_content['Unnamed: 0']
 
@@ -27,7 +27,7 @@ def sol_1_test(sol_1_dict):
     else:
         for k, v in sol_1_dict.items():
             if sol_1_dict_[k] != sol_1_dict[k]:
-                print("Oops! It looks like the value associated with: {} wasn't right. Try again.  It might just be the datatype.  All of the values should be ints except the article_id should be a string.  Let each row be considered a separate user-article interaction.  If a user interacts with an article 3 times, these are considered 3 separate interactions.\n\n  Notice you may also find the number of unique users as 5149 if you count the null user.  However, this is hard to catch without mapping first!".format(k))
+                print("Oops! It looks like the value associated with: {} wasn't right. Try again.  It might just be the datatype.  All of the values should be ints except the article_id should be a string.  Let each row be considered a separate user-article interaction.  If a user interacts with an article 3 times, these are considered 3 separate interactions.\n\n  Notice you may also find the number of unique users as 5149 if you count the null user. However, this is hard to catch without mapping first!".format(k))
                 
                 
 def sol_2_test(top_articles):
@@ -37,7 +37,7 @@ def sol_2_test(top_articles):
     
     checks = ['top_5', 'top_10', 'top_20']
     for idx, file in enumerate(checks):
-        if set(eval(file)) == set(pickle.load(open( "{}.p".format(file), "rb" ))):
+        if set(eval(file)) == set(pickle.load(open( "unit_tests\{}.p".format(file), "rb" ))):
             print("Your {} looks like the solution list! Nice job.".format(file))
         else:
             print("Oops! The {} list doesn't look how we expected.  Try again.".format(file))
