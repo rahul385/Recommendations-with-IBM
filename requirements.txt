@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+pickle
+pandas_profiling
+sklearn
+re
+nltk
