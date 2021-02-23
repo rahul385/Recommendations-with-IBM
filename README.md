@@ -5,7 +5,8 @@
 2. [Project Overview](#motivation)
 3. [The Process](#process)
 4. [File Descriptions](#files)
-5. [Licensing, Authors, and Acknowledgements](#license)
+5. [Visualizations](#image)
+6. [Licensing, Authors, and Acknowledgements](#license)
 
 ## Installation <a name="installation"></a>
 
@@ -65,6 +66,16 @@ Finally, complete a machine learning approach to building recommendations. Using
 * **Profiling_Report- df.html**: Pandas profiling report for user-item-interactions.csv.
     
 * **user_common_article**:  Pickle file created for user matrix.
+
+## Screenshots <a name="image"></a>
+
+***Screenshot 1: Train Accuracy Vs Latent Features***
+
+![Screenshot 1](https://github.com/rahul385/Recommendations-with-IBM/blob/main/Train_Accuracy_Vs_Latent_Features.png)
+
+***Screenshot 2: Test Accuracy Vs Latent Features***
+
+![Screenshot 2](https://github.com/rahul385/Recommendations-with-IBM/blob/main/Test_Accuracy_Vs_Latent_Features.png)
 
 
 ## Licensing, Authors, Acknowledgements <a name="license"></a>
