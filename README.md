@@ -1,10 +1,17 @@
 # Recommendations-with-IBM
 
 ### Table of Contents
-1. [Project Overview](#motivation)
-2. [The Process](#process)
-3. [File Descriptions](#files)
-4. [Licensing, Authors, and Acknowledgements](#license)
+1. [Installation](#installation)
+2. [Project Overview](#motivation)
+3. [The Process](#process)
+4. [File Descriptions](#files)
+5. [Licensing, Authors, and Acknowledgements](#license)
+
+## Installation <a name="installation"></a>
+
+All the librarires required to run the code are mentioned in [requirements.txt](https://github.com/rahul385/Recommendations-with-IBM/blob/master/requirements.txt).
+
+To install Run: `pip install -r requirements.txt`
 
 ## Project Overview<a name="motivation"></a>
 
